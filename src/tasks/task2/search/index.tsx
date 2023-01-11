@@ -198,15 +198,7 @@ const Search = () => {
                     loading="lazy"
                     role="contentinfo"
                   />
-                  {/* <div
-                    style={{
-                      backgroundImage: book.cover_i
-                        ? `url(https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg)`
-                        : `url(${noCover})`,
-                    }}
-                    className={styles.cover}
-                    role="contentinfo"
-                  /> */}
+
                   <div className={styles.overlay}>
                     {hoverISBN && (
                       <>

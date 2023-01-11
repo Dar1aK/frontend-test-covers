@@ -1,11 +1,7 @@
 ## 0. Before you begin
 
-You have 48 hours to solve this assesment
-
 You can work with any technology you want, but solutions in React
 are prefered. If you decide to work with anything else other than React or Vanilla JS feel free to remove the whole project and start fresh, but make sure to add instructions on how to run your solution.
-
-We have prepared a simple HTTP server for you to begin with, in order to get it to work run the following commands in the root of this project
 
 ```
 npm install
@@ -14,11 +10,17 @@ npm run start
 
 You should then be able to access your code on http://127.0.0.1:8080.
 
-If you decide to implement your solution, or part of it in React we have created a clean React app, you can find it in `react-app` directory. The app was created with create-react-app (https://create-react-app.dev/), to run it move into its directory and run `npm run start` inside it. The app should open in a new dev server at http://localhost:3000/
+If you decide to implement your solution, or part of it in React we have created a clean React app, you can find it in `react-app` directory. The app was created with create-react-app (https://create-react-app.dev/), to run it move into its directory and run `npm run start` inside it.
 
 First make sure the application works, if you have any time left after that you may add styles or other stuff to further improve it, but the main objective is to **complete every task below**.
 
-Don't hesitate to come to us with any questions.
+## 1. Warmup
+
+Feel free to just create a JavaScript file to solve this task, no need to implement it with React
+
+1. Add a button to a HTML5 page
+2. When the button is pressed print numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+3. Each number/fizz should be in a new line
 
 ## 2. Working with the API
 

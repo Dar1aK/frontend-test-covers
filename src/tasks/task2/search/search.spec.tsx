@@ -137,15 +137,16 @@ describe("Search", () => {
 
     await waitFor(
       () =>
-        expect(getAllByRole("contentinfo")[0]).toHaveStyle(
-          `background-image: url("https://covers.openlibrary.org/b/id/8406786-L.jpg")`
+        expect(getAllByRole("contentinfo")[0].getAttribute("src")).toBe(
+          "https://covers.openlibrary.org/b/id/8406786-L.jpg"
         ),
       {
         timeout: 3000,
       }
     );
-    expect(getAllByRole("contentinfo")[1]).toHaveStyle(
-      `background-image: url("https://covers.openlibrary.org/b/id/255844-L.jpg")`
+
+    expect(getAllByRole("contentinfo")[1].getAttribute("src")).toBe(
+      "https://covers.openlibrary.org/b/id/255844-L.jpg"
     );
   });
 
@@ -165,8 +166,8 @@ describe("Search", () => {
 
     await waitFor(
       () =>
-        expect(getAllByRole("contentinfo")[1]).toHaveStyle(
-          `background-image: url("http://127.0.0.1:8080/src/assets/no-cover.jpg")`
+        expect(getAllByRole("contentinfo")[1].getAttribute("src")).toBe(
+          "http://127.0.0.1:8080/src/assets/no-cover.jpg"
         ),
       {
         timeout: 3000,
