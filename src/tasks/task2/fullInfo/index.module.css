@@ -1,0 +1,14 @@
+.fullInfo {
+  display: flex;
+  align-items: center;
+}
+
+.fullInfo div {
+  padding: 20px;
+}
+
+@media (max-width: 922px) {
+  .fullInfo {
+    flex-direction: column;
+  }
+}
